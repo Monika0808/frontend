@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Color Change Example</title>
+      <style>
+        body {
+          transition: background-color 2s ease; /* Set the transition property for smooth color change over 2 seconds */
+        }
+      </style>
+    </head>
+    <body>
+    
+    <script>
+      // Function to change the background color
+      function changeColor() {
+        // Generate a random color in hex format
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    
+        // Apply the new color to the body background
+        document.body.style.backgroundColor = randomColor;
+      }
+    
+      // Change the background color every 3 seconds (3000 milliseconds)
+      setInterval(changeColor, 3000);
+    </script>
+    
+    </body>
+    </html>
+    
